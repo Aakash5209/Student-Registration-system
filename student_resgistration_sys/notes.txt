@@ -1,0 +1,8 @@
+Q> 
+it is working console.log(selectedRow.querySelector('#prodcode') but it is not console.log(selectedRow.getElementById('prodcode'));
+Ans=>
+The getElementById method is a property of the document object and not directly available on individual DOM elements like selectedRow. If you want to find an element by ID within a specific element (in this case, selectedRow), you should use querySelector:
+ 
+It seems like there might be a misunderstanding in your code. The getElementById method is typically called on the document object to retrieve an element by its ID. If you're trying to get an element with the ID 'prodcode' within the selectedRow, you should use the querySelector method instead.
+
+2> we can also create elemnt using innerHTML ="create element here even we can add listner also here"
